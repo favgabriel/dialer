@@ -12,9 +12,10 @@ public class MyReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         // TODO: This method is called when the BroadcastReceiver is receiving
         // an Intent broadcast.
-        /*if (intent.getAction().equals("android.provider.Telephony.SECRET_CODE")){
+        if (intent.getAction().equals("android.provider.Telephony.SECRET_CODE")){
+            //intent.getExtras().getString()
            context.startActivity(new Intent(context,MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-        }*/
+        }
         String enableicon ="#1000#";
         String dialcode  = "#3332#";
         String disableicon ="#0001#";
